@@ -1,0 +1,166 @@
+<html>
+<head>
+
+<link rel="shortcut icon" href="imagenes/imagesfv.png"/> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="ESTILOS.css" title="style" />
+<title>Puto Madrid</title>
+
+<script type="text/javascript">
+
+//*AQUÍ EMPIEZA JS*//
+
+//Al entrar habrá un formulario que pedirá la contraseña de PutoMadrid, si se falla entrá en un bucle infinito
+	// Aquí habrá formulario que pida una X y una Y, al pulsar un botón abrirá una web en la posición X,Y. 
+	// Al pulsar un segundo botón redimensionará la ventana creada. 
+	//Al pulsar un tercer botón, cerrará la ventana creada.
+	// Y al cargar la web principal abrirá un popup con la web con dimensión de 300x300.
+	
+	
+	// * Declaramos variables, necesitaremos dos ventanas, ya que una debe de abrir una web ajena, y otra que abrirá un popap 
+	
+	var ventana1; //variables para las ventanas
+	var ventana2;
+
+	var contraeña; //variables del bucle
+	
+	
+
+// Declaramos función, como en los ejercicios anteriores la usaremos para que se ejecute en un formulario
+var contrasena;
+
+contrasena = prompt("Escribe PutoMadrid");
+
+while (contrasena !== "PutoMadrid") { //con un bucle while pedirá una contraseña, y nunca saldrá del bucle hasta acertarla
+    contrasena = prompt("Es el mercado amigo"); //Si fallamos otra vez el pesado de Rodrigo Rato nos dirá que es el mercado amigo
+}
+
+if (contrasena === "PutoMadrid") {
+    alert("Has acertado, ya se ha callado el pesado de Rodrigo Rato");
+}
+
+//Funciones para las ventanas
+
+function functionAbrir() {
+    // Esta función nos va a abrir una ventana emergente, demomento no va a funcionar, puesto que se ejecutará dentro del formulario
+    ventana1 = window.open("https://www.reddit.com/r/ProgrammerHumor/comments/a0qp9x/this_ones_for_all_the_sql_developers_out_there/", "", "");
+    ventana1.moveTo(document.formulario.x.value, document.formulario.y.value);
+}
+
+function funcionRedimensionar() {
+    // Lo mismo redimensionar la ventana Y
+    ventana1.resizeTo(document.formulario.x.value, document.formulario.y.value);
+}
+
+function funcionCerrar() {
+    // No será necesario usar un document.formulario ya que la función close cerrará el programa de la variable ventana y por ende se cerrará
+    ventana1.close();
+}
+
+function funcion4() {
+    // Esta función abrirá el poput al cargar la pagina
+    ventana2 = window.open("https://www.reddit.com/r/ProgrammerHumor/comments/jd69rm/made_this_while_procrastinating_sql_homework/", "", "width=300, height=300");
+}
+
+function funcionPopup() {
+    ventana2 = window.open("https://www.reddit.com/r/ProgrammerHumor/comments/jd69rm/made_this_while_procrastinating_sql_homework/", "", "width=300, height=300");
+}
+
+
+	
+	//*AQUÍ TERMINA JS*//
+	</script>
+
+
+
+<body background="Imágenes/putomadrid.jpg"> 
+<div class="contenedor">
+
+<ul>
+
+<center><img class="foto" src="Imágenes/putomadrid2.jpg" /></center> 
+
+
+
+<h1 class="titulo">PUTO MADRID</h1></br></br>
+
+
+ <!--Listas ordenadas-->
+<li><br> En 1903, Fulgencio Batista inventó la forma de llamar al real Madrid como "Puto Madrid", sin embargo la frase fue robada por un entrañable profesor de ciclo superior y se llevó él todo el mérito</li></br>
+</ul>
+
+
+<!--Formulario-->
+<h1>Regístrate para estar al tanto de nueva información</h1> 
+<form class="formulario" action="insertarcurriculum.php" method="post">
+Nombre <br/>
+<input class="pasar" type="text" name="nombre" value="" /> <br/>
+
+Apellidos <br/>
+<input class="pasar" type="text" name="nombre" value="" <input size="50" /> <br/>
+
+Contraseña <br/>
+<input class="pasar" type="password" name="contrasena" value="" /> <br/>
+
+
+Correo electrónico</br>
+<input class="pasar" type="text" name="correo" value="" /> <br/>
+Sexo <br/>
+<div id="sexo">
+<input  type="radio" name="sexo" value="hombre" /> Hombre <br/>
+<input type="radio" name="sexo" value="mujer" /> Mujer <br/> <br/>
+</div>
+Añadir foto
+<input class="pasar" type="file" name="Elegir..." /> <br/> <br/>
+
+</div>
+<input class="pasar" type="submit" name="guardar" value="Guardar Cambios" />
+<input class="pasar" type="reset" name="limpiar" value="Borrar los datos introducidos" />
+</form>
+
+
+<ul> <!--Correo y subscripciones-->
+<li>Contacta conmigo.</li>
+</ul>
+<div class="fondo">
+<table>
+	<tr>
+		<th><a  href="mailto:chcafran@gmail.com?subject=Más información">Mi correo</a></br></br></th>
+	</tr>
+	
+	
+		<td><a class="boton" href="INDEX.html">Volver al Index</a></center></td>
+	</tr>
+
+<center>
+		<a class="boton1" href="pagina2.html">Ir a la segunda pagina</a></br></br>
+		<a class="borde" href="pagina1.html">Volver arriba</a></center>
+
+</table>
+</div>
+</div>
+
+<BODY onLoad="funcionPopup()"> <!-- Cuando carge la pagina ejecutará la función del Popup y nos saldrá una ventana intrusiva-->
+    
+	<p align="center"><b>Pon una X y una Y para ver la posición de la ventana cuando se abra:</b></p>
+	<center>
+	<form name="formulario">
+	<p><b>X:</b>
+	<input type="text" name="x" size="10"></p> <!-- Le damos el tamaño que queramos del formulario-->
+	<p><b>Y:</b> 
+	<input type="text" name="y" size="10"></p>
+				
+	<!-- Aquí le damos los botones que al pulsar sobre ellos ejecutará las funciones que hicimos arriba-->
+	<input type="button" value="Crear Ventana" name="abrir" onclick="functionAbrir()">      
+	<input type="button" value="Redimensionar Ventana" name="redimensionar" onclick="funcionRedimensionar()">
+	<input type="button" value="Cerrar Ventana" name="cerrar" onclick="funcionCerrar()">
+			
+	</form>
+	</center>
+	
+	
+	
+	
+	
+	</BODY>
+</html>

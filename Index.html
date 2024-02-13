@@ -1,0 +1,280 @@
+<html>
+<head>
+
+
+		<link rel="shortcut icon" href="imagenes/favicon.png"/> 
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="ESTILOS.css" title="style" />
+
+
+<title>Index</title>
+
+ <body background="Imágenes/blanco.jpg">  <!--Fondo-->
+<div class="contenedor">
+<img class="foto" src="Imágenes/sql.jpg" alt="LN7"/>
+
+
+<h1 class="titulo">El auge del delete from</h1>
+
+<b><h2><center>Selección de paginas</li></b></h2></center>
+	
+			
+			<li><a href="Index.html">Index</a>
+			<li><A HREF="pagina1.html"> Pagina1, (se puede abrir en el c) </a>
+			<li><a href="pagina2.html"> Pagina2:  (se puede abrir en el d)</a>   <!-- Lista desordenada con las distintas paginas que componen el poryecto  -->
+				
+			 </li>
+
+
+<ul>
+
+
+<li><b><i>Si las campanas del peak oil llevan tiempo sonando, ahora repican con más fuerza. De momento tenemos al mayor productor de petróleo del mundo, Arabia Saudí, reconociendo que han llegado a su techo de producción, mientras los costes de extracción siguen encareciendo los precios y el consumo supera la producción.
+Aunque el uso de combustibles fósiles no terminará a medio plazo, los vehículos eléctricos están jugando su papel en el estancamiento de la demanda: en 2021, la adopción de estos vehículos sacó del mercado 1,5 millones de barriles de petróleo al día. Es una de las principales conclusiones a las que llega el informe de Bloomberg NEF sobre el avance de los coches eléctricos en el mundo, con un notable auge en los últimos años.
+En 2021 las ventas de coches eléctricos marcaron un nuevo récord a nivel mundial: crecieron un 103 %, hasta alcanzar los 6,6 millones de unidades. China y Europa son los países con mayor peso en esta transición.
+Este auge evitó el consumo, de acuerdo a sus datos, de 1,5 millones de barriles de petróleo al día en 2021 en comparación con los 725.000 barriles en 2015.</li></b></i>
+
+
+<li>La mayor parte de 'culpa' la tienen los vehículos eléctricos de dos y tres ruedas, debido a la rápida adopción de motos y triciclos eléctricos en Asia. Le siguen los autobuses y los coches eléctricos de pasajeros.
+Y aunque parece una cifra elevada, esos 1,5 millones de barriles suponen tan solo el 3,3 % de la demanda global.</li>
+</ul>
+
+<div id="enl">
+
+	<a class="boton1" href="Index.html">Volver arriba</a>
+	
+	<a class="borde" href="INDEX.html">Volver al Index</a></center>
+	
+	
+	<script language="JavaScript">
+
+//*AQUÍ EMPIEZA JS*//
+
+var Nombre;
+Nombre=prompt ("Escribe tu nombre");     // el Prompt sirve para crear contenedores para escribir dentro de ellos, 
+                                            //(funcioma para textos) //
+document.write ("<br />");
+alert ("hola: "+Nombre);
+
+
+//El Index tendrá tendrá el siguiente menú: 
+	//MENU
+	//A-MULTIPLOS CON BUCLE
+	//B-ARRAY CON PARES 
+	//C-VENTANA PAGINA1
+    //D-VENTANA PAGINA2
+	//E-SALIR
+//la A: pedirá un número y enseñará los múltiplos de 2 o de 3 entre el 1 y ese número. Y si es negativo lo volverá a pedir
+// La B: pedirá 5 números y los pondrá en un array. Tendrá que sumar y mostrarlos, contar los numeros pares y si son mayores, menores o iguales. Por último cambiará su posición
+// la C: abrirá la pagina1.html se *abrirá en el punto (200,200) y con un tamaño de 600x750*.
+//la D:  permitirá escribir en el formulario que pida una altura y una anchura y abra la web al pulsar un botón.
+//Si pulsamos la E, terminará el programa.
+
+
+// Declaración de variables
+
+var opcion; //variables del menu
+var numero1,numero2,contador2,contador3,i,x; //variables case A
+var vector = new Array(5), contador = 0, contadorigual = 0, contadormayor = 0, contadormenor = 0, suma,i,temp; //variables case B
+var ventana; //variables case D
+
+//(el C lo he hecho sin necesidad de variables pero también se podría hacer con una función de ventana)
+
+
+    // Mostrar el menú 
+
+       
+       // Pedir que seleccione una opción
+        var opcion = prompt(                   // Crearemos una nueva variable con un prompt a no ser numerica, 
+                                                // y rellenaremos con las opciones que pusimos arriba
+          "Selecciona una opción:\n" +   
+            "a-MULTIPLOS CON BUCLE\n" +
+            "b-ARRAY CON PARES\n" +
+            "c-VENTANA1\n" +
+            "d-VENTANA2\n" +
+            "e-SALIR"
+        );
+  
+        // Ejecutar la opción seleccionada
+        switch (opcion) {    // Y ahora empezamos con el propio menú, diciendole al Switch que haga las condiciones en función de las variables que hemos creado antes
+        
+        
+      
+case "a":
+case "A":
+    var contador2 = 0; //iciciamos ambos contadores en 0 porqué tendrán que contar los multiplos
+    var contador3 = 0;
+
+    var numero1, numero2;
+    do {
+        numero1 = parseInt(prompt("Introduce un número"));
+        numero2 = parseInt(prompt("Introduce otro número"));
+        if (numero1 < 1 || numero2 < 1) { //si el numero del prompt es menor que 1 no funcionará
+            alert("Los números deben ser mayores o iguales a 1, es el mercado amigo.");
+        } //saldrá un alert en consiguiente donde Rodrigo Rato nos explicará que es el mercado amigo.
+    } while (numero1 < 1 || numero2 < 1); // saldrá del bucle tras poner números positivos
+
+    alert("Los múltiplos de 2 entre " + numero1 + " y " + numero2); //concatena los resultaodos en un alert cuando los encuentre
+
+    for (var x = numero1; x <= numero2; x++) {//ejecutará el bucle for si se cumplé la condicón de que sea multiplo de 2 en el if
+        if (x % 2 === 0) {
+            alert(x);
+            contador2++;
+        }
+    }
+
+
+    alert("Los múltiplos de 3 entre " + numero1 + " y " + numero2);
+
+    for (var x = numero1; x <= numero2; x++) { //el bucle for será un contador del numero asigando en la variable que contará los multiplos
+        //entre el numero 1 y ese numero
+        if (x % 3 === 0) {
+            alert(x );
+            contador3++;
+        }
+    }
+
+  
+
+    alert("Total de múltiplos del2: " + contador2 ); //finalmente mostrará los resultados en un alert
+    alert("Total de múltiplos del 3: " + contador3);
+
+    break;
+          
+case "b":
+case "B":
+    var vector = new Array(5); //puse aquí las variables principales para tenerlas más ordenadas
+    var contador = 0;
+    var contadorigual = 0;
+    var contadormayor = 0;
+    var contadormenor = 0;
+
+    // 1) Función para calcular la suma de los elementos del array
+    function sumaArray(array) {
+        var suma = 0;
+        for (var i = 0; i < array.length; i++) {
+            suma += array[i];
+        }
+        return suma;
+    }
+
+    // *Llenado del array
+    for (var numero = 0; numero < 5; numero++) {
+        vector[numero] = parseInt(prompt("Introduce un número"));
+    }
+
+    // 2) Mostrar el array y recorrerlo
+    document.write("<h2>Array:</h2>");
+    for (var numero = 0; numero < 5; numero++) {
+        document.write("El número ", numero + 1, " es ", vector[numero], "<br>");
+    }
+
+    // 3) Mostrar y contar los pares del array
+    document.write("<h2>Números pares:</h2>");
+    for (var numero = 0; numero < 5; numero++) {
+        if (vector[numero] % 2 === 0) {
+            contador++;
+            document.write("El número ", vector[numero], " es par.<br>");
+        }
+    }
+
+    // 4) Mostrar el máximo, mínimo e igual
+    var vec = new Array(5);
+    for (var y = 0; y < 5; y++) {
+        vec[y] = parseInt(prompt("Introduce un número para ver los mayores,menores, e iguales"));
+    }
+
+    var numero = parseInt(prompt("Introduce un número y lo buscará"));
+
+    for (var y = 0; y < 5; y++) { //usamos un bucle for que se cumplirá con las siguientes condiciones del if y de los else if
+        if (vec[y] === numero) {
+            contadorigual++;
+        } else if (vec[y] > numero) {
+            contadormayor++;
+        } else if (vec[y] < numero) {
+            contadormenor++;
+        }
+    }
+
+    document.write("<h2>Mostrar mayores, menores e iguales:</h2>");
+    document.write("El máximo del array es: ", contadormayor, "<br>"); //si las condiciones se cumplen mostrará los resultados
+    document.write("El mínimo del array es: ", contadormenor, "<br>");
+    document.write("Números iguales: " + contadorigual + "<br>");
+    document.write("Números mayores: " + contadormayor + "<br>");
+    document.write("Números menores: " + contadormenor + "<br>");
+
+    // 5) Calcular la suma del array y mostrarla
+    var suma = sumaArray(vector); //usamos la function que creamos al principio
+    document.write("<h2>Suma del array:</h2>");
+    document.write("La suma del array es: " + suma + "<br>");
+
+    // 6) Intercambiar la primera y la última posición con una variable temporal
+    var temp = vector[0]; //usamos una variable temporal para cambiar las posiciones
+    vector[0] = vector[4];
+    vector[4] = temp;
+
+    alert("Vector del array intercambiado: " + vector);
+
+    break;
+
+
+case "c":
+case "C":
+  window.open("pagina1.html",  "left=200,top=200,width=600,height=750"); //Al pulsar el C nos redirigirá a la pagina 1
+  break;
+          
+case "d":
+case "D":
+var ventana;
+
+function funcion1() { // Esta función abrirá la página2 pero lo hará mediante un botón en un formulario HTML
+
+ventana = window.open("pagina2.html","","width=”+document.formulario.ancho.value+” height="+document.formulario.alto.value); 
+}
+
+function funcion2() {
+ventana.close(); //cierra la ventana creada
+window.close();//cierra la ventana actual
+}
+break;
+          
+          
+case "e": 
+case "E":
+document.write("Adiosito");
+break;
+          
+default:
+document.write("La opción es inválida, es el mercado amigo."); //por defecto Rodrigo Rato nos dirá que es el culpa del mercado amigo
+
+alert ("Es el mercado amigo");}		
+		
+//*AQUÍ TERMINA JS*//		
+</script>
+
+
+
+
+
+
+</div>
+</div>
+
+<p align="center"><b>Escribe la anchura y la altura para la ver la pagina cuando le des al botón:</b></p>
+<center>
+
+
+<form name="formulario" >
+<p><b>Anchura:</b><input type="text" name="ancho" size="10"></p>
+<p><b>Altura:</b> <input type="text" name="alto" size="10"></p>
+<input type="button" value="Crear Ventana" name="B1"
+onclick="funcion1()"> <!-- Las funciones que hemos creado antes se ejecutarán aquí al pulsar con el ratón en el botón-->
+<input type="button" value="Cerrar Ventana" name="B2"
+onclick="funcion2()">
+</form>
+
+
+</body>
+</html>
+

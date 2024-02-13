@@ -1,0 +1,90 @@
+
+*{font-family: arial,sans-serif;
+} /* Ponemos todo el formato en Arial*/
+.contenedor{ width: 90%;
+			 font-weight: normal;
+			 text-align: center;
+			 font-size: 1em;}	
+
+.foto{height: 60%; width: 60%;} /* La foto tendrá una anchura del 60% de la página y a una altura de 60% tambien*/
+.titulo{font-size: 2em; 
+color: #B7DAC8;
+text-align: center;
+}
+/* el color de letra será de #FFBD00 y la alineación del texto centrada */
+ul{ text-align: left;
+	background-color:  #FFBD00;
+	padding: 5px;
+} /* Alineación izquierda con color de fondo #FFBDO00 y espacio de relleno 5px*/
+li{	list-style-type: square;
+	list-style-position: inside;
+	color: blue;
+	line-height: 2em;
+}
+/* posicionado interno junto con el interlineado de 2em y pone color rojo en texto*/
+.formulario{ text-align:left;
+			 margin: 0 30%;
+			 font-weight: bold;
+			 font-size: 1.5em;
+			 color: #63295C;
+			 border: 4px solid #00BFFF;
+			 padding: 60px;
+			 background-color: #D6D2C7;
+}
+/*En el formulario habrá una alineacion izquierda, junto con un margen tambien a la izquierda y derecha del 30% de la página, la letra será negrita de tamaño 1.5em, de color morado con un borde sólido cuadrado.
+un espacio de relleno de 40px y un color de fondo #CC0000, que a su vez tendrá los bordes de un azul verdoso*/
+input:focus{ border: 6px solid #00FF7F;} /*cuando se pincha en una caja del formulario le pone un borde sólido de color #00FF7F */
+input{padding: 5px;} /*Las cajas del formulario tendrán un espacio de relleno de 5px*/
+.pasar:hover{background-color: #CC0000;} 
+#sexo:hover{background-color: #FACD12;}
+#correo:hover{background-color: #A612FA;}
+/*cuando se pasa el cursor por encima de los campos "sexo" y del formulario se pondrán de color amarillo*/
+a{font-size: 1.3em;
+  padding: 5px;
+  margin: 3em;
+  }
+/*Los enlaces tendrán un tamaño de letra 1.3em, junto con un espacio de relleno de 5px y un margen de 3em*/
+a.boton {
+		text-decoration: none;
+		color: #222;
+		font-weight: bold;
+		border: 4px solid #191970; 
+		background: #A612FA;
+		padding: 10px;
+		display: block;
+}
+a.boton1{width: 40%;
+		text-decoration: none;
+		color: #9AC442;
+		font-weight: bold;
+		border: 4px solid #191970; 
+		background: #E0FFFF;
+		padding: 10px;
+		display: block;}
+/*Los enlaces paredcerán botones funcionales, pondrá la letra de otra tonalidad de azul, y el color de fondo en rojo, junto a un espacio de relleno de 10px*/
+a.borde{ text-decoration: none;
+		border-bottom: 6px solid  #191970; 
+}
+/*Los enlaces de clase contarán con un subrayado más fuerte*/
+ a:hover {
+ background: #CC0000;
+ color: #4277C4;}
+ /*Cuando pasemos con el cursor por encima de un enlace este cambiará de color de texto el de fondo*/
+ a:visited {
+ color: #4F4DF4;
+ }
+ /*El color de los enlaces será de azul*/
+ .fondo:hover{ background: url("coche1.jpeg") no-repeat center;} /*Una imagen de fondo que aparecerá y desaparecerá al pasar el cursor (no funciona)*/
+ table{  position:relative;
+		margin: 0 35%;
+		border: none ;
+		text-align: center;
+}
+/*La tabla tendrá un margen del 35% a izquierda y derecha, sin borde y el texto centrado*/
+tr,th{ padding: 20px 0;
+	 margin: 20px 0;
+}
+/*La tabla contará con filas y columnas con un margen de 20px arriba y abajo de 20px*/
+#enl{	margin-bottom: 40px;
+		padding: 2em;}
+#enl:hover{ background: url("coche1.jpeg") no-repeat center;}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="imagenes/imagesfv.png"/> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="ESTILOS.css" title="style" />
+    <title>Las últimas décadas del delete from</title>
+</head>
+<body background="Imágenes/blanco.jpg" width="40" height="40" />
+<div class="contenedor">
+    <img class="foto" src="Imágenes/deletefrom.jpg" height="" width="" />
+    <h2>No te olvides de poner el WHERE en el DELETE FROM</h2>
+    <br /><br />
+    <ul>
+        <li>En 1903, Fulgencio Batista inventó la forma de llamar al Real Madrid como "Puto Madrid", sin embargo la frase fue robada por un entrañable profesor de ciclo superior y se llevó él todo el mérito</li>
+    </ul>
+    <!--Formulario-->
+    <h1>Regístrate para estar al tanto de nueva información</h1> 
+    <form class="formulario" action="insertarcurriculum.php" method="post">
+        Nombre <br/>
+        <input class="pasar" type="text" name="nombre" value="" /> <br/>
+        Apellidos <br/>
+        <input class="pasar" type="text" name="nombre" value="" <input size="50" /> <br/>
+        Contraseña <br/>
+        <input class="pasar" type="password" name="contrasena" value="" /> <br/>
+        Correo electrónico<br />
+        <input class="pasar" type="text" name="correo" value="" /> <br/>
+        Sexo <br/>
+        <div id="sexo">
+            <input type="radio" name="sexo" value="hombre" /> Hombre <br/>
+            <input type="radio" name="sexo" value="mujer" /> Mujer <br/> <br/>
+        </div>
+        Añadir foto
+        <input class="pasar" type="file" name="Elegir..." /> <br/> <br/>
+        <input class="pasar" type="submit" name="guardar" value="Guardar Cambios" />
+        <input class="pasar" type="reset" name="limpiar" value="Borrar los datos introducidos" />
+    </form>
+    <ul> <!--Correo y suscripciones-->
+        <li>Contacta conmigo.</li>
+    </ul>
+    <div class="fondo">
+        <table>
+            <tr>
+                <th><a href="mailto:chcafran@gmail.com?subject=Más información">Mi correo</a></th>
+            </tr>
+            <tr>
+                <td><a class="boton" href="INDEX.html">Volver al Index</a></td>
+            </tr>
+            <tr>
+                <td><a class="boton1" href="pagina2.html">Ir a la segunda página</a></td>
+            </tr>
+            <tr>
+                <td><a class="borde" href="pagina1.html">Volver arriba</a></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+ <!--caja de texto para Js-->
+<form name="formulario">
+    Introduce tu nombre:<br>
+    <input type="text" name="nombre" size="10"><br><br>
+    <input type="button" name="case4" value="Saludo" onclick="saludar()">
+</form>
+
+
+	
+	
+	
+	<input type=button value="Cerrar" name="B2" onclick=cerrarPagina()>
+
+<script>
+
+
+// Habrá una caja de texto que pedirá un nombre, si se pone y se pulsa en el botón saludará ese nombre
+//y con el botón inferior cerrará el programa
+
+	//*Aquí emppieza Js*//
+    function saludar() {
+            var nombre = document.formulario.nombre.value;
+            alert("¡Hola, " + nombre);
+        }
+        function cerrarPagina() {
+            window.close();
+        }
+
+
+
+
+</script>
+
+
+<body background="purple"> 
+<div class="contenedor">
+    <ul>
+        <center><img class="foto" src="Imágenes/delete.jpg" /></center> 
+        <h1 class="titulo">Amigo programador, tu que estas todo el día picando código
+
+			escucha estas recomendaciones, sólo hechas para ti
+			
+			La apocalipsis ha llegado con solo una instrucción,
+			
+			 se me olvido escribir el where cuando escribi el delete from,
+			
+			los aviones van cayendo y los bancos van quebrando,
+			
+			maldita sea que tenia el where en un comentario.
+			
+			Ya se ha declarado el estado de emergencia,
+			
+			no va el backup, da un error de inconsistencia.
+			
+			Todo el mundo corre, todo el mundo grita
+			
+			el delete from acabará con toda vida!
+			
+			NO TE OLVIDES DE PONER EL WHERE EN EL DELETE FROM (bis*2)
+			
+			La policia ha intentado comprobar que ha pasado,
+			
+			pero el delete from los historiales ha borrado.
+			
+			Y ya no es suficiente el ejercito actuará, pero no tiene datos no puede actuar.
+			
+			La gente saqueando los supermercados,
+			
+			el fin del mundo llega, todo ha finalizado.
+			
+			Todo el mundo corre, todo el mundo grita
+			
+			el delete from acabará con toda vida!
+			
+			NO TE OLVIDES DE PONER EL WHERE EN EL DELETE FROM (bis*n)
+			
+			Amigo programador, puedes cometer muchos fallos,
+			
+			pero nunca nunca nunca olvides el where en el delete from, las consecuencias pueden ser terribles</h1>
+    </ul>
+    <!-- Listas ordenadas -->
+</div>
+
+</BODY>
+</html>
